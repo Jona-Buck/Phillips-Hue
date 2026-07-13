@@ -31,8 +31,10 @@
       </nav>
     </header>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <main id="home">
-      <section class="hero section">
+      <section class="hero section is-active">
         <div class="hero-copy">
           <p class="eyebrow">Smart Light Design System</p>
           <h1>Philips Hue neu gedacht – elegant, ruhig und modern.</h1>
@@ -131,13 +133,29 @@
         </div>
       </section>
 
-      <section id="faq" class="section faq-contact-grid">
-        <article class="panel reveal">
+      <section id="faq" class="section faq-section">
+        <div class="section-heading">
           <p class="section-label">FAQ</p>
-          <h2>Wie geht es weiter?</h2>
-          <p>Im nächsten Sprint folgen Motion, Scroll-Animationen und die Vorbereitung für die 3D-Engine.</p>
-        </article>
-        <article id="contact" class="panel reveal panel-cta">
+          <h2>Häufige Fragen auf einen Blick.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Was ist das Ziel dieser Webseite?</summary>
+            <p>Eine hochwertige, moderne Philips-Hue-Erlebniswelt mit Raum für spätere 3D- und Motion-Erweiterungen.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Wird die Seite noch erweitert?</summary>
+            <p>Ja. Nächste Schritte sind stärkere Animationen, feinere Scroll-Storys und später eine 3D-Inszenierung.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Ist die Seite mobil nutzbar?</summary>
+            <p>Ja. Das Layout ist responsive aufgebaut und für Smartphone, Tablet und Desktop optimiert.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact" class="section faq-contact-grid">
+        <article class="panel reveal panel-cta">
           <p class="section-label">Kontakt</p>
           <h2>Bereit für den nächsten Ausbau.</h2>
           <p>Die Seite ist so angelegt, dass wir sie Schritt für Schritt weiter veredeln können.</p>
