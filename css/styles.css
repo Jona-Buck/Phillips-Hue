@@ -278,7 +278,8 @@ img {
 .faq-contact-grid,
 .cards,
 .product-grid,
-.gallery {
+.gallery,
+.faq-list {
   display: grid;
   gap: 18px;
 }
@@ -289,7 +290,8 @@ img {
 
 .panel,
 .card,
-.product-card {
+.product-card,
+.faq-item {
   border: 1px solid var(--border);
   background: var(--surface);
   border-radius: var(--radius-lg);
@@ -307,7 +309,8 @@ img {
 
 .panel p,
 .card p,
-.product-card p {
+.product-card p,
+.faq-item p {
   color: var(--muted);
   line-height: 1.8;
 }
@@ -375,6 +378,35 @@ img {
   grid-row: span 2;
 }
 
+.faq-section {
+  padding-top: 90px;
+}
+
+.faq-list {
+  max-width: 860px;
+}
+
+.faq-item {
+  padding: 0;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 24px;
+  font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 24px 24px;
+}
+
 .footer {
   padding: 14px 0 24px;
   color: var(--muted);
@@ -438,5 +470,9 @@ img {
 
   .hero h1 {
     max-width: none;
+  }
+
+  .faq-section {
+    padding-top: 72px;
   }
 }
