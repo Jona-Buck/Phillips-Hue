@@ -16,11 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     const currentY = window.scrollY;
-    if (currentY > 24) {
-      topbar.style.transform = currentY > lastY ? 'translateY(-2px)' : 'translateY(0)';
-    } else {
-      topbar.style.transform = 'translateY(0)';
-    }
+    topbar.style.transform = currentY > 24 && currentY > lastY ? 'translateY(-2px)' : 'translateY(0)';
     lastY = currentY;
   }, { passive: true });
+
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    item.addEventListener('toggle', () => {
+      if (item.open) {
+        document.querySelectorAll('.faq-item[open]').forEach((other) => {
+          if (other !== item) other.open = false;
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 });
