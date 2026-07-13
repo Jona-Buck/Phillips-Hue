@@ -389,6 +389,12 @@ img {
 .faq-item {
   padding: 0;
   overflow: hidden;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.faq-item[open] {
+  border-color: rgba(94, 242, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .faq-item summary {
@@ -396,6 +402,21 @@ img {
   cursor: pointer;
   padding: 22px 24px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item summary::after {
+  content: '+';
+  color: var(--accent);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after {
+  content: '–';
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -474,5 +495,13 @@ img {
 
   .faq-section {
     padding-top: 72px;
+  }
+
+  .faq-item summary {
+    padding: 20px;
+  }
+
+  .faq-item p {
+    padding: 0 20px 20px;
   }
 }
