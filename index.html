@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eine hochwertige, interaktive Philips-Hue-Erlebniswebseite mit modernem Design und Raum für 3D-Animationen." />
+  <meta name="theme-color" content="#050816" />
+  <title>Philips Hue Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Philips Hue Experience Startseite">
+        <span class="brand-mark"></span>
+        <span>Hue Experience</span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#about">Überblick</a>
+        <a href="#benefits">Vorteile</a>
+        <a href="#products">Produkte</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Smart Light Design System</p>
+          <h1>Philips Hue neu gedacht – elegant, ruhig und modern.</h1>
+          <p class="lead">
+            Eine hochwertige Erlebnisseite mit klarer Typografie, sanften Lichtverläufen und einer Architektur,
+            die später zu einer 3D-Produktwelt ausgebaut werden kann.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">Erleben</a>
+            <a class="button button-secondary" href="#about">Mehr erfahren</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="dashboard">
+            <div class="dashboard-row"><span>Wohnzimmer</span><strong>Warmweiß</strong></div>
+            <div class="dashboard-row"><span>Schlafzimmer</span><strong>Dimmen</strong></div>
+            <div class="dashboard-row"><span>Entertainment</span><strong>Sync an</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section content-grid">
+        <article class="panel reveal">
+          <p class="section-label">Überblick</p>
+          <h2>Für Räume gemacht, die sich gut anfühlen sollen.</h2>
+          <p>
+            Philips Hue verbindet Licht, Stimmung und Automation. Diese Seite setzt genau darauf auf:
+            hochwertig, aufgeräumt und mit viel Raum für Motion Design.
+          </p>
+        </article>
+        <article class="panel reveal panel-accent">
+          <p class="section-label">Design</p>
+          <h2>Minimalistisch, aber nicht kalt.</h2>
+          <p>
+            Glassmorphism, weiche Schatten, ruhige Kontraste und Lichtakzente sorgen für einen Premium-Look,
+            ohne überladen zu wirken.
+          </p>
+        </article>
+      </section>
+
+      <section id="benefits" class="section">
+        <div class="section-heading">
+          <p class="section-label">Vorteile</p>
+          <h2>Wesentliche Funktionen, klar präsentiert.</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal"><h3>Atmosphäre</h3><p>Passende Lichtstimmung für Alltag, Fokus und Entspannung.</p></article>
+          <article class="card reveal"><h3>Automation</h3><p>Zeiten, Routinen und Szenen, die dein Zuhause intuitiv steuern.</p></article>
+          <article class="card reveal"><h3>Entertainment</h3><p>Licht, das sich mit Musik, Film oder Games synchronisieren kann.</p></article>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <div class="section-heading">
+          <p class="section-label">Produkte</p>
+          <h2>Eine kompakte Übersicht für den Einstieg.</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal"><span>01</span><h3>Hue Bridge</h3><p>Das Zentrum für Szenen, Räume und smarte Steuerung.</p></article>
+          <article class="product-card reveal"><span>02</span><h3>Hue Bulbs</h3><p>Flexible Leuchtmittel mit breitem Farbspektrum.</p></article>
+          <article class="product-card reveal"><span>03</span><h3>Hue Sync</h3><p>Immersive Lichtsteuerung für Entertainment und Gaming.</p></article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-heading">
+          <p class="section-label">Galerie</p>
+          <h2>Licht, Formen und Ruhe als visuelle Sprache.</h2>
+        </div>
+        <div class="gallery">
+          <div class="gallery-tile tile-large reveal"></div>
+          <div class="gallery-tile reveal"></div>
+          <div class="gallery-tile reveal"></div>
+          <div class="gallery-tile reveal"></div>
+        </div>
+      </section>
+
+      <section class="section faq-contact-grid">
+        <article class="panel reveal">
+          <p class="section-label">FAQ</p>
+          <h2>Wie geht es weiter?</h2>
+          <p>Im nächsten Sprint folgen Motion, Scroll-Animationen und die Vorbereitung für die 3D-Engine.</p>
+        </article>
+        <article id="contact" class="panel reveal panel-cta">
+          <p class="section-label">Kontakt</p>
+          <h2>Bereit für den nächsten Ausbau.</h2>
+          <p>Die Seite ist so angelegt, dass wir sie Schritt für Schritt weiter veredeln können.</p>
+          <a class="button button-primary" href="#home">Zurück nach oben</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Hue Experience · Konzept für GitHub Pages</p>
+    </footer>
+  </div>
+</body>
+</html>
